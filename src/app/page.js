@@ -42,49 +42,37 @@ const projectsData = [
         id: 1,
         title: "Marathon du web",
         description: "Le marathon du web est un evenement organisé par l'IUT de Lens ou des étudiants de MMI et Informatique sont en groupe pendant 2 jours. L'objectif était de faire un site ou on peut créer et lire des histoires où on est le héros.Project 1 description",
-        image: "/images/projects/1.png",
-        gitUrl: "/",
-        previewUrl: "/",
+        image: "/images/projects/1.webp",
     },
     {
         id: 2,
         title: "Flatcraft",
         description: "Flatcraft est un projet scolaire en java fx. L'objectif est de recréer un minecraft en 2d, avec une base donnée. Il y a les mêmes dimensions que minecraft.",
-        image: "/images/projects/2.png",
-        gitUrl: "/",
-        previewUrl: "/",
+        image: "/images/projects/2.webp",
     },
     {
         id: 3,
         title: "Amélioration Imprimante 3D",
         description: "Modification afin d'ajouter un palpeur de plateau pour compenser les défauts de planéité du plateau d'impression pour cela soudure sur la carte mère et flash avec un firmware personnalisé",
-        image: "/images/projects/3.jpg",
-        gitUrl: "/",
-        previewUrl: "/",
+        image: "/images/projects/3.webp",
     },
     {
         id: 4,
         title: "Voiture RC 3D / Microcontrolleur",
         description: "Conception chassis et electronique d'une voiture de RC completement imprimer en 3D",
-        image: "/images/projects/4.jpg",
-        gitUrl: "/",
-        previewUrl: "/",
+        image: "/images/projects/4.webp",
     },
     {
         id: 5,
         title: "Reparation pc portable",
         description: "Suite a une chute d'un ordinateur portable les fixations de la charniere était ireparable j'ai donc tout demonter afin de remplacer les coques de l'ordinateur portable",
         image: "/images/projects/5.jpg",
-        gitUrl: "/",
-        previewUrl: "/",
     },
     {
         id: 6,
         title: "Tirette de bras de fauteuil",
         description: "Modélisation et impression 3D d'une tirette de bras de fauteuil a cassé grâce à la modélisation et impression 3D le fauteuil est de nouveau utilisable.",
-        image: "/images/projects/6.jpg",
-        gitUrl: "/",
-        previewUrl: "/",
+        image: "/images/projects/6.webp",
     },
 ];
 export default function Home() {
@@ -153,7 +141,7 @@ export default function Home() {
                                 ))}
                             </div>
                             <div className="mt-8">
-                                {TAB_DATA[0].content} {/* Default content, can be changed to show based on the tab */}
+                                {TAB_DATA[0].content} {}
                             </div>
                         </div>
                     </div>
