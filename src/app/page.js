@@ -1,5 +1,42 @@
 import React from "react";
 import Image from "next/image";
+const TAB_DATA = [
+    {
+        title: "Compétences",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Python</li>
+                <li>HTML/CSS/Javascript/PHP/TypeScript</li>
+                <li>MySQL/SQLite/PostgreSQL</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Logiciel CAO SolidWorks</li>
+            </ul>
+        ),
+    },
+    {
+        title: "Parcours",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>BUT Informatique à l'IUT de Lens</li>
+                <li>Baccalauréat STI2D Option ITEC au Lycée Carnot Bruay-la-buissiere</li>
+            </ul>
+        ),
+    },
+    {
+        title: "Loisirs",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Mécanique</li>
+                <li>Électronique</li>
+                <li>Impression 3D</li>
+                <li>Jeux Vidéo</li>
+                <li>Musique</li>
+                <li>Voyage</li>
+            </ul>
+        ),
+    },
+];
 const projectsData = [
     {
         id: 1,
@@ -73,7 +110,7 @@ export default function Home() {
                         <div className="col-span-4 place-self-center mt-4 lg:mt-0">
                             <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
                                 <Image
-                                    src="/images/profile.png"
+                                    src="/images/profile.svg"
                                     alt="image de profile"
                                     className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 />
@@ -97,19 +134,14 @@ export default function Home() {
                         </div>
                         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                             <div className="flex flex-row justify-start mt-8">
-                                    <button className="mr-3 font-semibold hover:text-white">
-                                        Competences
+                                {TAB_DATA.map((tabData, index) => (
+                                    <button key={index} className="mr-3 font-semibold hover:text-white">
+                                        {tabData.title}
                                     </button>
+                                ))}
                             </div>
                             <div className="mt-8">
-                                <ul className="list-disc pl-2">
-                                    <li>Python</li>
-                                    <li>HTML/CSS/Javascript/PHP/TypeScript</li>
-                                    <li>MySQL/SQLite/PostgreSQL</li>
-                                    <li>Java</li>
-                                    <li>C++</li>
-                                    <li>Logiciel CAO SolidWorks</li>
-                                </ul>
+                                {TAB_DATA[0].content} {}
                             </div>
                         </div>
                     </div>
