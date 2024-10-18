@@ -112,6 +112,8 @@ export default function Home() {
                                 <Image
                                     src="/images/profile.svg"
                                     alt="image de profile"
+                                    width={340}
+                                    height={320}
                                     className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 />
                             </div>
