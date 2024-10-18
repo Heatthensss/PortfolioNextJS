@@ -97,11 +97,9 @@ export default function Home() {
                         </div>
                         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                             <div className="flex flex-row justify-start mt-8">
-                                {TAB_DATA.map((tabData, index) => (
                                     <button key={index} className="mr-3 font-semibold hover:text-white">
-                                        {tabData.title}
+                                        Competences
                                     </button>
-                                ))}
                             </div>
                             <div className="mt-8">
                                 <ul className="list-disc pl-2">
