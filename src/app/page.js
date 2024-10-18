@@ -1,42 +1,5 @@
 import React from "react";
 import Image from "next/image";
-const TAB_DATA = [
-    {
-        title: "Compétences",
-        content: (
-            <ul className="list-disc pl-2">
-                <li>Python</li>
-                <li>HTML/CSS/Javascript/PHP/TypeScript</li>
-                <li>MySQL/SQLite/PostgreSQL</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>Logiciel CAO SolidWorks</li>
-            </ul>
-        ),
-    },
-    {
-        title: "Parcours",
-        content: (
-            <ul className="list-disc pl-2">
-                <li>BUT Informatique à l'IUT de Lens</li>
-                <li>Baccalauréat STI2D Option ITEC au Lycée Carnot Bruay-la-buissiere</li>
-            </ul>
-        ),
-    },
-    {
-        title: "Loisirs",
-        content: (
-            <ul className="list-disc pl-2">
-                <li>Mécanique</li>
-                <li>Électronique</li>
-                <li>Impression 3D</li>
-                <li>Jeux Vidéo</li>
-                <li>Musique</li>
-                <li>Voyage</li>
-            </ul>
-        ),
-    },
-];
 const projectsData = [
     {
         id: 1,
@@ -141,7 +104,14 @@ export default function Home() {
                                 ))}
                             </div>
                             <div className="mt-8">
-                                {TAB_DATA[0].content} {}
+                                <ul className="list-disc pl-2">
+                                    <li>Python</li>
+                                    <li>HTML/CSS/Javascript/PHP/TypeScript</li>
+                                    <li>MySQL/SQLite/PostgreSQL</li>
+                                    <li>Java</li>
+                                    <li>C++</li>
+                                    <li>Logiciel CAO SolidWorks</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
