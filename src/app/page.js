@@ -97,7 +97,7 @@ export default function Home() {
                         </div>
                         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                             <div className="flex flex-row justify-start mt-8">
-                                    <button key={index} className="mr-3 font-semibold hover:text-white">
+                                    <button className="mr-3 font-semibold hover:text-white">
                                         Competences
                                     </button>
                             </div>
